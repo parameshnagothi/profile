@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #2e2e2e, #e8f5e9);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    header p h2 {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin: 20px auto;
+      display: block;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .project-card p {
+      color: #666;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #8bc34a;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+
+    .contact-btn:hover {
+      background-color: #689f38;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NAGOTHI PARAMESH</h1>
+    <p><h2>MCA GRADUATE</h2></p>
+    <img src="C:\\Users\\DELL\\downloads\\mypic.jpg" alt="Profile Image" class="profile-img">
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p><h4> I enjoy spending my time watching movies, anime, and dramas, which not only entertain me but also spark my creativity. I have a passion for discovering new things, whether it's exploring different topics or learning new skills. Cooking is something I truly love; experimenting with recipes and creating delicious dishes brings me a lot of joy. I also love listening to music, which helps me relax and sets the perfect mood for any activity. Alongside this, I sometimes dive into writing stories, allowing my imagination to flow and bring unique ideas to life. These hobbies help me unwind, stay inspired, and continuously explore my creative side.</h4></p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul style="list-style-type: none; padding: 0;">
+      <li><strong>Programming Languages:</strong> Python, Java, </li>
+      <li><strong>Web Development:</strong> HTML, CSS, Django</li>
+      <li><strong>Tools & Technologies:</strong>SQL, MongoDB, Msoffice</li>
+      <li><strong>Languages:</strong> English, Telugu</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://th.bing.com/th?id=OIP.-dEmEhAIldVFOLi5PcfXmAHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Crop Formation">
+        <h3>Crop Forming</h3>
+        <p>Built with HTML and CSS</p>
+      </div>
+      <div class="project-card">
+        <img src="https://th.bing.com/th/id/OIP.1QSRd7XUXQFWC-AzfQLwRQHaEK?w=308&h=180&c=7&r=0&o=5&pid=1.7" alt="Library System">
+        <h3>Library System</h3>
+        <p>A Python-based project.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://th.bing.com/th/id/OIP.tr44UTBTpZZ4UXJrC2Gd3wHaEJ?w=292&h=180&c=7&r=0&o=5&pid=1.7" alt="Parking Management System">
+        <h3>Parking Management System</h3>
+        <p>A Django-based project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Interested in working together? Let's connect!</p>
+    <a href="mailto:your.paramesh3628@example.com" class="contact-btn">Get in Touch</a>
+    <p>Instagram: <a href="https://instagram.com/parameshnagothi" target="_blank">@parameshnagothi</a></p>
+    <p>Facebook: <a href="https://facebook.com/nagothiparamesh" target="_blank">@nagothiparamesh</a></p>
+    <p>WhatsApp: <a href="https://wa.me/9515362864" target="_blank">+91 9515362864</a></p>
+  </section>
+
+  <footer>
+    <p>© NAGOTHI PARAMESH. All rights reserved.</p>
+  </footer>
+</body>
+</html>
